@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <p><b>Картомышев Антон Романович P3213 Вариант: 466137</b></p>
+</header>
+
+<div>
+    <form id="main-form">
+        <!-- === R === -->
+        <div class="form-for-param">
+            <label>Изменение R</label><br>
+        </div>
+        <div class="input">
+            <input type="checkbox" name="param-R" value="1" id="r-1"><label for="r-1">1</label>
+            <input type="checkbox" name="param-R" value="2" id="r-2"><label for="r-2">2</label>
+            <input type="checkbox" name="param-R" value="3" id="r-3"><label for="r-3">3</label>
+            <input type="checkbox" name="param-R" value="4" id="r-4"><label for="r-4">4</label>
+            <input type="checkbox" name="param-R" value="5" id="r-5"><label for="r-5">5</label>
+        </div>
+
+        <!-- === X === -->
+        <div class="form-for-param">
+            <br>
+            <label for="x">Изменение X</label><br>
+        </div>
+        <div class="input">
+            <input type="text" name="param-X" id="x" placeholder="значение X от -5 до 3" required>
+        </div>
+
+        <!-- === Y === -->
+        <div class="form-for-param">
+            <br>
+            <label>Изменение Y</label><br>
+        </div>
+        <div class="input">
+            <input type="checkbox" name="param-Y" value="-3" id="y--3"><label for="y--3">-3</label>
+            <input type="checkbox" name="param-Y" value="-2" id="y--2"><label for="y--2">-2</label>
+            <input type="checkbox" name="param-Y" value="-1" id="y--1"><label for="y--1">-1</label>
+            <input type="checkbox" name="param-Y" value="0" id="y-0"><label for="y-0">0</label>
+            <input type="checkbox" name="param-Y" value="1" id="y-1"><label for="y-1">1</label>
+            <input type="checkbox" name="param-Y" value="2" id="y-2"><label for="y-2">2</label>
+            <input type="checkbox" name="param-Y" value="3" id="y-3"><label for="y-3">3</label>
+            <input type="checkbox" name="param-Y" value="4" id="y-4"><label for="y-4">4</label>
+            <input type="checkbox" name="param-Y" value="5" id="y-5"><label for="y-5">5</label>
+        </div>
+
+        <br>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <!-- === Canvas для графика === -->
+    <br>
+    <p>
+        <canvas id="myCanvas" width="400" height="400" style="border:1px solid black;"></canvas>
+    </p>
+
+    <!-- === Таблица результатов === -->
+    <h3 id="text-result-table">Результаты:</h3>
+    <table id="result-table" border="1">
+        <tr>
+            <th>X</th>
+            <th>Y</th>
+            <th>R</th>
+            <th>Попадание</th>
+            <th>Текущее время</th>
+            <th>Время исполнения</th>
+        </tr>
+    </table>
+</div>
+
+<script src="script01.js"></script>
+</body>
+</html>
